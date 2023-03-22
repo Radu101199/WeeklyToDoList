@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Todo List</title>
+	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<main class="Aplicatie">
+		<section class="creazaActivitate">
+			<h2>Lista Activitati Saptamanale</h2>
+			<form id="formularActivitateNoua">
+				<h4>Ce activitati ai pentru aceasta saptamana?</h4>
+				<input 
+					type="text" 
+					name="content"
+					id="continut"
+					class="continut"
+					 />
+				<input type="submit" value="Adauga Activitate" class="button"/>
+			</form>
+		</section>
+		<section>
+			<h4>Lista Activitati</h4>
+			<div class="lista" id="listaActivitati"></div>
+		</section>
+		<br>
+		<div class="progresCircular" id="progresMain">
+			<div class="procentaj" id="procentajMain"></div> 
+		</div>
+		<div id="popupOverlay">
+			<div id="popupDiv">
+				<h2>Felicitari!</h2>
+				<div class="progresCircular" id="popupProgress">
+					<div class="procentaj" id="procentajPopUp"></div> 
+				</div>
+				<button id="exitBtn">Reset</button>
+			</div>
+		</div>
+		<div id="overlay"></div>
+	</main>
+	<script src="index.js"></script>
+</body>
+</html>
